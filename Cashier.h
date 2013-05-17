@@ -21,7 +21,7 @@ class Cashier : private Person {
 			{this->cash -= money; person.take_cash(money);}
 		//void by_smth();
 		void set_price(Book&, int);
-		void sell(Book&);
+		void sell(Book&,Person&);
 	private:
 		string name;
 		string status;
@@ -43,10 +43,11 @@ void Cashier::set_price(Book &book, int cost)
 	book.price = cost;
 }	
 
-void Cashier::sell(Book&)
+void Cashier::sell(Book&,Person&)
 {
 	//для начала нужно определить кому он продаёт
 	// 
+	
 }
 
 
